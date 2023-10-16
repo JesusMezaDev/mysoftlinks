@@ -3,8 +3,11 @@
       <div class="col">
         <div class="m-3">
           <label class="form-label" for="link">Link para acortar:</label>
-          <input type="text" class="form-control mb-2" name="link" id="link" v-model="linkInput" @keyup.enter="setShortUrl">
-          <button class="btn btn-success float-end" @click="setShortUrl">Generar</button>
+          <input type="text" class="form-control mb-2" name="link" id="link" v-model="linkInput" @keyup.enter="setShortUrl" :disabled="loading === true" placeholder="Ingrese una Url, ejemplo: https://jesusmeza.dev">
+          <button class="btn btn-success float-end" @click="setShortUrl" :disabled="loading === true">
+            <i class="ti ti-transform"></i>
+            Generar
+          </button>
         </div>
       </div>
     </div>
@@ -21,7 +24,7 @@
     import { storeToRefs } from 'pinia';
     import { linksStore } from '@/stores/links';
     const store = linksStore();
-    const { linkInput, shortUrl } = storeToRefs(store);
+    const { linkInput, loading, shortUrl } = storeToRefs(store);
     const { setShortUrl } = store;
 </script>
 

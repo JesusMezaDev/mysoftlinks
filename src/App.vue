@@ -1,6 +1,13 @@
 <template>
   <div class="container">
-    <router-view></router-view>
+    <header>
+      <div class="m-3 d-flex justify-content-center">
+        <h3>MyShortLinks</h3>
+      </div>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 

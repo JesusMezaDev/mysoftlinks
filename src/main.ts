@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '@tabler/icons-webfont/tabler-icons.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createApp } from 'vue';
 import router from './router';
