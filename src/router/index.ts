@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 
 import routerRedirecter from '@/modules/redirecter/router';
+import routerPageNotFound from '@/shared/router/index';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -12,6 +13,10 @@ const router = createRouter({
     {
       path: '/:shortUrl',
       ...routerRedirecter
+    },
+    {
+      path: '/pagenotfound',
+      ...routerPageNotFound
     },
     {
       path: '/:pathMatch(.*)*',

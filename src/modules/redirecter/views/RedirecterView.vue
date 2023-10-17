@@ -9,13 +9,22 @@
 <script setup lang="ts">
     import { onBeforeMount } from 'vue';
     import { useLinks } from '@/composables/useLinks';
-    import { useRoute } from 'vue-router';
+    import { useRoute, useRouter } from 'vue-router';
     const { getLink } = useLinks();
     const route = useRoute();
+    const router = useRouter();
+
+    const redirect = async () => {
+        try {
+            const link = await getLink(route.params.shortUrl.toString());
+            window.open(link, '_self');
+        } catch (error) {
+            router.push('pagenotfound');
+        }
+    }
 
     onBeforeMount(async () => {
-        const link = await getLink(route.params.shortUrl.toString());
-        window.open(link, '_self');
+        await redirect();
     });
 </script>
 
