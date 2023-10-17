@@ -7,7 +7,7 @@ export const useLinks = () => {
                 url,
                 shortUrl,
                 visited: 0,
-                createdAt: '2023-11-18',
+                createdAt: new Date().toLocaleString('es-mx', { timeZone: 'America/Mazatlan' }),
             },);
 
             return response.data.shortUrl;
