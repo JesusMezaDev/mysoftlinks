@@ -11,7 +11,7 @@
     import { useLinks } from '@/composables/useLinks';
     import { useRoute } from 'vue-router';
     const { getLink } = useLinks();
-    const route = useRoute()
+    const route = useRoute();
 
     onBeforeMount(async () => {
         const link = await getLink(route.params.shortUrl.toString());

@@ -14,8 +14,8 @@ const router = createRouter({
       ...routerRedirecter
     },
     {
-      path: '/pathMatch(.*)*',
-      redirect: { name: 'shortener' }
+      path: '/:pathMatch(.*)*',
+      component: () => import(/* webpackChunkName: "PageNotFound" */'@/shared/PageNotFoundView.vue'),
     }
   ]
 });
