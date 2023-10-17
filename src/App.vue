@@ -1,4 +1,5 @@
 <template>
+  <SpinnerView />
   <div class="container">
     <header>
       <div class="m-3 d-flex justify-content-center">
@@ -13,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-  
+  import SpinnerView from './shared/modules/spinner/views/SpinnerView.vue';
 </script>
 
 <style scoped>
