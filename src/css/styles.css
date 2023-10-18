@@ -1,2 +1,7 @@
-@import '@tabler/icons-webfont/tabler-icons.min.css';
+
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
