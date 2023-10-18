@@ -4,6 +4,7 @@ import { defineStore } from 'pinia';
 import confetti from 'canvas-confetti';
 
 import { useLinks } from '@/composables/useLinks';
+import { isAxiosError } from 'axios';
 
 export const linksStore = defineStore('links', () => {
     const linkInput = ref<String>('');
@@ -39,6 +40,7 @@ export const linksStore = defineStore('links', () => {
     
                 confetti();
             } catch (error) {
+                if (isAxiosError(error)) console.error(error);
                 shortUrl.value = 'No se pudo obtener la Url por el momento, inténtelo más tarde.';
             }
             finally {
