@@ -4,16 +4,12 @@
             <div class="col">
                 <section class="text-center">
                     <header>
-                        <span class="ti ti-link-off"></span>
-                        <span class="ti ti-error-404" />
+                        <span class="bi-patch-exclamation"></span>
                     </header>
                     <p>
                         Oops! no se encuentra el elemento, intenta ingresando una URL válida.
                     </p>
-                    <button class="btn btn-primary" id="btnHome">
-                        <i class="ti ti-home"></i>
-                        Inicio
-                    </button>
+                    <button class="btn btn-primary bi-house" id="btnHome">Inicio</button>
                 </section>
             </div>
         </div>
