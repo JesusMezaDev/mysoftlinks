@@ -1,11 +1,16 @@
 <template>
     <div class="row">
       <div class="col">
-        <div class="m-3">
-          <label class="form-label" for="link">Link para acortar:</label>
-          <input type="text" class="form-control mb-2" name="link" id="link" v-model="linkInput" @keyup.enter="setShortUrl" :disabled="loading === true" placeholder="Ingrese una Url, ejemplo: https://jesusmeza.dev">
-          <button class="btn btn-success float-end bi-link-45deg" @click="setShortUrl" :disabled="loading === true">Generar</button>
+        <div class="input-group mb-3">
+          <span class="input-group-text">
+            <i class="bi-link"></i>
+          </span>
+          <input type="text" class="form-control" name="link" id="link" v-model="linkInput" @keyup.enter="setShortUrl" :disabled="loading === true" placeholder="Ejemplo: https://jesusmeza.dev">
         </div>
+        <button class="btn btn-success float-end" @click="setShortUrl" :disabled="loading === true">
+          <i class="bi-link-45deg"></i>
+          Generar
+        </button>
       </div>
     </div>
     <div class="row">

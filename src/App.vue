@@ -3,7 +3,7 @@
   <div class="content-middle">
     <div class="container">
       <header>
-        <div class="m-3 d-flex justify-content-center">
+        <div class="mb-2 d-flex justify-content-center">
           <img src="/shortlink.svg" alt="Ícono de My Short Link" width="32" height="32" />
           <h3>MyShortLinks</h3>
         </div>

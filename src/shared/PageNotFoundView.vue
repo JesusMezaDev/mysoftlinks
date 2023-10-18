@@ -9,7 +9,10 @@
                     <p>
                         Oops! no se encuentra el elemento, intenta ingresando una URL válida.
                     </p>
-                    <button class="btn btn-primary bi-house" id="btnHome">Inicio</button>
+                    <button class="btn btn-primary" id="btnHome">
+                        <i class="bi-house"></i>
+                        Inicio
+                    </button>
                 </section>
             </div>
         </div>
