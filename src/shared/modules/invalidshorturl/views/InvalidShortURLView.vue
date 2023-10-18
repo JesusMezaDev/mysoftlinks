@@ -4,10 +4,10 @@
             <div class="col">
                 <section class="text-center">
                     <header>
-                        <span class="bi-patch-exclamation"></span>
+                        <span class="bi-file-earmark-x"></span>
                     </header>
                     <p>
-                        Oops! no se encuentra el elemento, intenta ingresando una URL válida.
+                        Oops! la URL no es válida, intenta con otra.
                     </p>
                     <button class="btn btn-primary" id="btnHome">
                         <i class="bi-house"></i>
@@ -26,7 +26,7 @@
 
     const handleClick = (e: Event) => {
         e.preventDefault();
-        router.push('/');
+        router.push({ name: 'home' });
     }
 
     onMounted(() => {

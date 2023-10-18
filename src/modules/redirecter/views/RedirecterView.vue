@@ -24,7 +24,7 @@
             const link = await getLink(route.params.shortUrl.toString());
             window.open(link, '_self');
         } catch (error) {
-            router.push('pagenotfound');
+            router.push({ name: 'pagenotfound' });
         }
         finally {
             loading.value = false;
