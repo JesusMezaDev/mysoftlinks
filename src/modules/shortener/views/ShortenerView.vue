@@ -1,7 +1,6 @@
 <template>
     <div class="row">
       <div class="col">
-        testeando ando
         <div class="input-group mb-3">
           <span class="input-group-text">
             <i class="bi-link"></i>
