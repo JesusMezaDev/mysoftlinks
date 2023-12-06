@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-  import SpinnerView from './shared/modules/spinner/views/SpinnerView.vue';
+  import SpinnerView from '@/shared/modules/spinner/views/SpinnerView.vue';
 </script>
 
 <style scoped>
