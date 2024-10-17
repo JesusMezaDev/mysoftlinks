@@ -1,7 +1,8 @@
 {
   "name": "mysoftlinks",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -10,23 +11,23 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
-    "axios": "1.5.1",
-    "bootstrap": "5.3.2",
-    "bootstrap-icons": "1.11.1",
-    "canvas-confetti": "1.9.0",
-    "pinia": "2.1.7",
-    "vue": "3.3.4",
-    "vue-router": "4.2.5"
+    "axios": "1.7.7",
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "canvas-confetti": "1.9.3",
+    "pinia": "2.2.4",
+    "vue": "3.5.12",
+    "vue-router": "4.4.5"
   },
   "devDependencies": {
-    "@tsconfig/node18": "18.2.2",
-    "@types/canvas-confetti": "1.6.1",
-    "@types/node": "20.8.6",
-    "@vitejs/plugin-vue": "4.4.0",
-    "@vue/tsconfig": "0.4.0",
-    "npm-run-all2": "6.1.1",
-    "typescript": "5.2.2",
-    "vite": "4.4.11",
-    "vue-tsc": "1.8.19"
+    "@tsconfig/node20": "20.1.4",
+    "@types/canvas-confetti": "1.6.4",
+    "@types/node": "22.7.6",
+    "@vitejs/plugin-vue": "5.1.4",
+    "@vue/tsconfig": "0.5.1",
+    "npm-run-all2": "6.2.3",
+    "typescript": "5.6.3",
+    "vite": "5.4.9",
+    "vue-tsc": "2.1.6"
   }
 }

@@ -29,3 +29,6 @@ coverage
 
 /environments/*
 !/environments/.env.template
+
+.vscode
+package-lock.json
