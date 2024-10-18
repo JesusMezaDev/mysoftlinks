@@ -35,8 +35,7 @@ export const linksStore = defineStore('links', () => {
                     return;
                 }
 
-                const short = Math.random().toString(36).substring(2, 10);
-                const response = await createLink(linkInput.value.toString(), short);
+                const response = await createLink(linkInput.value.toString());
                 shortUrl.value = response;
     
                 confetti();
